@@ -35,6 +35,7 @@ flatpickr(itemSelector, options);
 
 startBtn.addEventListener('click', function () {
   startBtn.disabled = true;
+  itemSelector.disabled = true;
 
   const selectedDate = new Date(itemSelector.value);
   const countdownInterval = setInterval(updateCountdown, 1000);
